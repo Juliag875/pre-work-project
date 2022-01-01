@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>FLIS pre-work project</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Exploring the World</title>
 </head>
 
+<!-- Main content -->
 <body class="container">
-  <header class="main-header group">
+  <header id="main-header">
     <h1> Exploring the World </h1>
-    <figure><img id="firstImg" src="https://placeimg.com/380/200/tech" alt="Tech">
-      <figcaption class="caption">The <em>World</em> is a book and those who do not <em>travel</em> read only a
-        page-Saint Augustine.</figcaption>
+    <figure><img id="firstImg" src="https://placeimg.com/585/200/tech" alt="Tech">
+      <figcaption id="figcaption">The World is a book and those who do not travel read only a
+        page. <strong>Saint Augustine</strong></figcaption>
     </figure>
 
     <nav>
@@ -23,67 +32,55 @@
   </header>
 
   <main>
-    <!-- Description  -->
-    <section class="primary-content">
+    <div id="about">
       <article>
         <h2>A simple blog about traveling Experiences</h2>
-        <p class="intro1 info column">We admire those who quit their jobs and travel the world, ticking off their bucket
-          lists one destination at a time. Seeing the planet’s greatest sights is still a very worthy endeavor that
-          everyone should have.</p>
-        <p class="intro2 info">The good thing is that there are countless incredible things to see and life-changing
-          experiences to have in this world. So, today we’re bringing you 4 experiences to add to your <strong>travel
-            bucket list</strong>.</p>
+        <p class="intro1 info column">We admire those who quit their jobs and travel the world, ticking off their bucket lists one destination at a time. Seeing the planet’s greatest sights is still a very worthy endeavor that everyone should have.</p>
+        <p class="intro2 info">The good thing is that there are countless incredible things to see and life-changing experiences to have in this world. So, today we’re bringing you 4 experiences to add to your <strong>travel bucket list</strong>.</p>
       </article>
-    </section>
+    </div>
 
-    <section class="main-article">
-      <ol>
-        <li>Hike the Andes to reach Incan ruins of Machu Picchu, Peru.</li>
-        <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=willian-justen-de-vasconcellos-4hMET7vYTAQ-unsplash.jpg"
-          width="380px" height="200px" alt="Machu Picchu, Peru">
-        <li>Go island hopping in Thailand, Thailand</li>
-        <img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=denys-nevozhai-guNIjIuUcgY-unsplash.jpg"
-        width="380px" height="200px" alt="Islands, Thailand">
-        <li>Ride hot-air balloon in Cappadocia, Turkey.</li>
-        <img src="https://images.unsplash.com/photo-1591448764624-d7973a442bff?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mehmet-turgut-kirkgoz-0ASU0LSWp6g-unsplash.jpg" 
-        width="380px" height="200px" alt="Air Baloon, Turkey">
-        <li>Breathe in the lavender fields in Provence, France</li>
-        <img src="https://images.unsplash.com/photo-1499002238440-d264edd596ec?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=leonard-cotte-c1Jp-fo53U8-unsplash.jpg" 
-        width="380px" height="200px" alt="Lavender Fields, France"><br>
-        <a href="#" class="additional-info">Read more</a>
-      </ol>
-    </section>
+    <div id="main-article">
+      <div class="row">
+        <div class="column1">
+          <img id="hike" src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=willian-justen-de-vasconcellos-4hMET7vYTAQ-unsplash.jpg" alt="Machu Picchu, Peru"/>
+        </div>
+        <div class="column2">
+          <!-- <p>Go island hopping in Thailand, Thailand</p> -->
+          <img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=denys-nevozhai-guNIjIuUcgY-unsplash.jpg" alt="Islands, Thailand">
+        </div>
+        <div class="column1 column3">
+          <!-- <p>Ride hot-air balloon in Cappadocia, Turkey.</p> -->
+          <img src="https://images.unsplash.com/photo-1591448764624-d7973a442bff?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mehmet-turgut-kirkgoz-0ASU0LSWp6g-unsplash.jpg" alt="Air Baloon, Turkey">
+        </div>
+        <div class="column4">
+          <!-- <li>Breathe in the lavender fields in Provence, France</li> -->
+          <img src="https://images.unsplash.com/photo-1499002238440-d264edd596ec?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=leonard-cotte-c1Jp-fo53U8-unsplash.jpg" alt="Lavender Fields, France"><br>
+        </div>
+      </div>
+    </div>
   </main>
   <hr>
-  <section>
-    <footer>
-      <h4>Contact:</h4>
-      <nav class="primary-footer">
-        <ul>
+  <footer id="primary-footer">
+      <h4>Contact us:</h4>
           <div class="contact">
-            <li>
+            <div>
               <label for="email">Email:</label>
               <input type="email" id="email" placeholder="email@website.com">
-            </li><br>
-            <li>
-              <a href="tel:555-555-5555">Call&nbsp;&phone;</a>
-            </li>
+            </div><br>
           </div>
-          <div class="social-media">
-            <li>
-              <a href="http://instagram.com" target="_blank" class="instagram">Instagram</a>
-            </li>
-            <li>
-              <a href="http://facebook.com" target="_blank" class="facebook">Facebook</a>
-            </li>
+          <div id="social-media">
+            <ul>
+              <li><a href=# class="fa fa-instagram fa-lg"></a></li>
+              <li><a href="#" class="fa fa-twitter fa-lg"></a></li>
+              <li><a href="#" class="fa fa-facebook-square fa-lg"></a></li>
+            </ul>
           </div>
-        </ul>
-      </nav>
     </footer>
-  </section>
-  <footer class="secondary-footer">
+  <footer id="secondary-footer">
     <span><small>&copy; 2020 Explore the World, Experiences blog</small></span>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
