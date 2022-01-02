@@ -58,7 +58,6 @@ a {
 }
  
 /* Header */
-
 #figcaption {
   color: rgb(170, 69, 10);
   font-size: 15px;
@@ -74,14 +73,27 @@ a {
 }
 
 /* Main Content */
-.column1 {
+.column1,
+.column3,
+.column2,
+.column4 {
   float: left;
   width: 50%;
   position: relative;
+  text-align: center;
 }
 
 #main-article {
   clear: both;
+}
+
+p.bottom-left {
+  color:white;
+  font-size: 15px;
+  font-style: italic;
+  position: absolute;
+  bottom: 2px;
+  left: 30px;
 }
 
 div#main-article div.row img {
@@ -105,4 +117,9 @@ input[type="email"] {
   width: 30px;
   display: inline-block;
   margin-left: 3px;
+}
+
+/* Pseudo-classes */
+a:hover {
+  color: red;
 }
